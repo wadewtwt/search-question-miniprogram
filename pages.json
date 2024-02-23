@@ -1,0 +1,238 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index",
+					"van-picker": "/wxcomponents/@vant/weapp/dist/picker/index"
+				}
+			}
+		},
+		{
+			"path": "pages/question-bank/index",
+			"style": {
+				"navigationBarTitleText": "题库",
+				"enablePullDownRefresh": true,
+				"usingComponents": {
+					"van-transition": "/wxcomponents/@vant/weapp/dist/transition/index"
+				}
+			}
+		},
+		{
+			"path": "pages/personal-center/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index"
+				}
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "authentication",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"usingComponents": {
+							"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index",
+							"van-picker": "/wxcomponents/@vant/weapp/dist/picker/index"
+						}
+					}
+				},
+				{
+					"path": "undone",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"usingComponents": {
+							"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index",
+							"van-picker": "/wxcomponents/@vant/weapp/dist/picker/index"
+						}
+					}
+				},
+				{
+					"path": "edit",
+					"style": {
+						"navigationBarTitleText": "修改个人信息",
+						"usingComponents": {
+							"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index",
+							"van-picker": "/wxcomponents/@vant/weapp/dist/picker/index"
+						}
+					}
+				}
+			]
+		},
+		{
+			"root": "my-test-paper",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "我的试卷",
+						"usingComponents": {
+							"van-popup": "/wxcomponents/@vant/weapp/dist/popup/index"
+						}
+					}
+				}
+			]
+		},
+		{
+			"root": "select-categories",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "选择分类",
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "web-view",
+			"pages": [
+				{
+					"path": "index",
+					"style": {
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "guidance",
+					"style": {
+						"navigationBarTitleText": "使用指南",
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "photo-search",
+			"pages": [
+				{
+					"path": "photograph/index",
+					"style": {
+						"pageOrientation": "landscape",
+						"usingComponents": {
+							"van-dialog": "/wxcomponents/@vant/weapp/dist/dialog/index"
+						}
+					}
+				},
+				{
+					"path": "crop-picture/index",
+					"style": {
+						"pageOrientation": "landscape",
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "search-question/index",
+					"style": {
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "search-question-by-text/index",
+					"style": {
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "question-detail/index",
+					"style": {
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "personal-center",
+			"pages": [
+				{
+					"path": "browsing-records/index",
+					"style": {
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "my-collection/index",
+					"style": {
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "share",
+			"pages": [
+				{
+					"path": "view",
+					"style": {
+						"usingComponents": {}
+					}
+				}
+			]
+		},
+		{
+			"root": "question-bank",
+			"pages": [
+				{
+					"path": "document-list/index",
+					"style": {
+						"enablePullDownRefresh": true,
+						"usingComponents": {}
+					}
+				},
+				{
+					"path": "mine/index",
+					"style": {
+						"enablePullDownRefresh": true,
+						"usingComponents": {}
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "Mirror",
+		"navigationBarBackgroundColor": "#07072b",
+		"backgroundColor": "#07072b"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#07072b",
+		"color": "#ffffff",
+		"selectedColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/question-bank/index",
+				"iconPath": "static/img/tabbar/question_category.png",
+				"selectedIconPath": "static/img/tabbar/question_category.png",
+				"text": "题库"
+			},
+			{
+				"pagePath": "pages/personal-center/index",
+				"iconPath": "static/img/tabbar/personal_center.png",
+				"selectedIconPath": "static/img/tabbar/personal_center.png",
+				"text": "个人中心"
+			}
+		]
+	},
+	"plugins": {
+		"functional-page-navigator": {
+			"version": "develop",
+			"provider": "wx120845d86865"
+		}
+	}
+}
